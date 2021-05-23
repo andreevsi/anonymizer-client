@@ -1,0 +1,38 @@
+{
+  "name": "anonymizer-cli",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bignumber": "^1.1.0",
+    "bignumber.js": "^9.0.1",
+    "circomlib": "git+https://github.com/Rock-n-Block/anonimyzer-circomlib.git",
+    "commander": "^7.2.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "snarkjs": "0.3.59",
+    "web3": "^1.3.5"
+  },
+  "scripts": {
+    "tree": "node ./dist/src/index.js tree",
+    "compile-and-start": "tsc && node ./dist/src/index.js",
+    "compile": "tsc",
+    "lint": "eslint \"**/*.ts\" --fix",
+    "test": "jest --runInBand"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "ethereum-input-data-decoder": "^0.3.2",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5",
+    "typescript": "4.1.3"
+  }
+}
